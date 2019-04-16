@@ -1,0 +1,374 @@
+/* import */
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+/* all */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #caf7ff;
+    font-family: 'Patrick Hand', '微軟正黑體', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(70, 49, 206);
+    transition: color 0.2s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 10vw;
+    margin: 5vh auto;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    margin: 5vh 0;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: -80px;
+    background-color: #fff;
+}
+
+header>h1 {
+    margin-right: 2.5rem;
+}
+
+header a:hover {
+    color: rgb(137, 0, 228);
+}
+
+/* menu */
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu--col {
+    flex-direction: column;
+}
+
+.menu__item {
+    padding: 15px;
+    font-weight: 600;
+
+}
+
+.menu__item--selected {
+    border-left: 3px solid slateblue;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5vh 15vh;
+    margin-top: 80px;
+    font-size: 18px;
+    min-height: calc(100vh - 80px);
+}
+
+.container__item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.container__item--round {
+    border-radius: 20px;
+}
+
+.container__list {
+    line-height: 1.5rem;
+}
+
+.container__listItem {
+    padding-left: 1rem;
+    font-weight: 600;
+    font-family: '微軟正黑體', cursive;
+}
+
+.container__title {
+    font-size: 1.65rem;
+    color: rgb(70, 49, 206);
+}
+
+.container__subtitle {
+    font-size: 1.35rem;
+    font-family: '微軟正黑體', cursive;
+}
+
+.container__content {
+    line-height: 2.5rem;
+    font-family: '微軟正黑體', cursive;
+    font-weight: normal;
+    text-indent: 2em;
+}
+
+.container__image {
+    text-align: center;
+}
+
+.container__imageInfo {
+    font-weight: 600;
+}
+
+/* index */
+#index {
+    justify-content: space-around;
+}
+
+#index>.container__item {
+    justify-content: space-between;
+    width: calc(100vw / 4);
+    height: 75vh;
+    text-align: center;
+}
+
+#index a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2vh;
+}
+
+#about a>div,
+#history a>div,
+#resource a>div,
+#download a>div,
+#storyhall a>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#about,
+#history,
+#resource,
+#download {
+    height: calc(70vh / 2);
+    border: 2px solid orangered;
+}
+
+#about a:hover,
+#history a:hover,
+#resource a:hover,
+#download a:hover {
+    color: orangered;
+}
+
+#storyhall {
+    height: 75vh;
+    border: 2px solid slateblue;
+    font-size: 1.5em;
+}
+
+#storyhall a:hover {
+    color: slateblue;
+}
+
+/* about, storyhall */
+#sidebar {
+    position: fixed;
+    top: 20vh;
+    margin-left: -5vw;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+#info,
+#evolution,
+#work {
+    padding-top: 18vh;
+    margin-top: -18vh;
+    margin-left: 20vw;
+
+}
+
+#story {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#story>.container__item {
+    justify-content: flex-start;
+    width: 25%;
+    padding: 0px 20px;
+}
+
+[id^="story0"] {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    color: red;
+    font-weight: 600;
+}
+
+[id^="ques"]+span {
+    margin-left: 15px;
+}
+
+/* timeline */
+.timeline {
+    margin-left: -30px;
+}
+
+.timeline__nav {
+    position: fixed;
+    top: 50vh;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.timeline__nav--selected {
+    color: rgb(70, 49, 206);
+    transform: scale(1.5);
+}
+
+.timeline__nav li:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.timeline__event {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 15vw;
+}
+
+.timeline__event>div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.timeline__title {
+    font-size: 2rem;
+    color: rgb(70, 49, 206);
+}
+
+.timeline__subtitle {
+    font-size: 1.35rem;
+    font-family: '微軟正黑體', cursive;
+}
+
+.timeline__content {
+    line-height: 2.5rem;
+    font-family: '微軟正黑體', cursive;
+}
+
+/* member */
+.member {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.member>.container__item {
+    width: 25vw;
+    /* border: 1px solid slateblue */
+}
+
+.member h2 {
+    text-align: center;
+}
+
+.member__login,
+.member__register {
+    width: 30vw;
+}
+
+#testRecord,
+#dataModify,
+#passwordChange,
+#logOut {
+    margin-left: 20vw;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#testRecord form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+#testRecord select {
+    min-width: 10vw;
+    padding-right: 0.5vw;
+    font-size: 0.9em;
+}
+
+#testRecord input[type="submit"] {
+    padding: 6px 10px;
+    width: 60px;
+}
+
+#dataModify input,
+#passwordChange input {
+    width: 50%;
+}
+
+#dataModify input[type="submit"],
+#passwordChange input[type="submit"],
+#logOut input[type="submit"] {
+    width: 10vw;
+}
+
+#dataModify label,
+#passwordChange label {
+    font-size: 1.25em;
+}
