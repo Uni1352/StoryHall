@@ -182,7 +182,7 @@ header a:hover {
 #about a>div,
 #history a>div,
 #resource a>div,
-#download a>div,
+#member a>div,
 #storyhall a>div {
     display: flex;
     flex-direction: column;
@@ -193,7 +193,7 @@ header a:hover {
 #about,
 #history,
 #resource,
-#download {
+#member {
     height: calc(70vh / 2);
     border: 2px solid orangered;
 }
@@ -201,7 +201,7 @@ header a:hover {
 #about a:hover,
 #history a:hover,
 #resource a:hover,
-#download a:hover {
+#member a:hover {
     color: orangered;
 }
 
