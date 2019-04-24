@@ -22,28 +22,25 @@
                 <li class="menu__item"><a href="#">行動故事館</a></li>
                 <li class="menu__item"><a href="./resource.html">學習資源</a></li>
                 <!-- <li class="menu__item"><a href="./download.html">下載專區</a></li> -->
-                <li class="menu__item"><a href="./login.html">登入</a></li>
+                <li class="menu__item"><a href="./login.php">登入</a></li>
             </ul>
         </nav>
     </header>
     <!-- TODO: container -->
     <div class="container" style="justify-content: center">
         <div class="member">
-            <div class="member__login">
-                <h2 class="container__title">登入</h2>
+            <div class="member__register">
+                <h2 class="container__title">註冊</h2>
                 <form>
+                    <input type="text" name="userName" id="" placeholder="Username">
                     <input type="email" name="userEmail" id="" placeholder="E-mail">
                     <input type="password" name="userPassword" id="" placeholder="Password">
-                    <div style="display:flex;justify-content: space-between; font-size: 0.9em">
-                        <span>還沒有帳戶？&nbsp;&nbsp;<a href="./register.html">註冊</a></span>
-                        <span><a href="./forget.html">忘記密碼</a></span>
-                    </div>
-                    <input type="submit" value="登入">
+                    <span style="font-size: 0.9em">已經有帳戶了？&nbsp;&nbsp;<a href="./login.php">登入</a></span>
+                    <input type="submit" value="註冊">
                 </form>
             </div>
         </div>
     </div>
-    <script src="./stylesheets/js/alert.js"></script>
 </body>
 
 </html>
