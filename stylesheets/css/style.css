@@ -241,8 +241,11 @@ header a:hover {
 
 #story>.container__item {
     justify-content: flex-start;
-    width: 25%;
-    padding: 0px 20px;
+    margin: 0px 20px;
+}
+
+#story>.container__item img {
+    width: 20vw;
 }
 
 [id^="story0"] {

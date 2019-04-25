@@ -60,10 +60,11 @@ if (isset($_POST['userid']) && isset($_POST['password']))
 <?php
   if (isset($_SESSION['valid_user']))
   {
-    header("Location: ./index.html");
-    exit;
-    // echo '<br><br><br><br><br><br>';
-    // echo '<p>You are logged in as: '.$_SESSION['valid_user'].' <br />';
+    // header("location: ./index.html");
+    // exit;
+    echo '<script language = "javascript" type = "text/javascript">';
+    echo 'location.href: "./index.html"';
+    echo '</script>';
   }
   else
   {?>
