@@ -19,7 +19,7 @@
             <ul class="menu">
                 <li class="menu__item"><a href="./about.html">關於區塊鏈</a></li>
                 <li class="menu__item"><a href="./history.html">歷史回顧</a></li>
-                <li class="menu__item"><a href="#">行動故事館</a></li>
+                <li class="menu__item"><a href="./storyhall.php">行動故事館</a></li>
                 <li class="menu__item"><a href="./resource.html">學習資源</a></li>
                 <!-- <li class="menu__item"><a href="./download.html">下載專區</a></li> -->
                 <li class="menu__item"><a href="./login.php">登入</a></li>

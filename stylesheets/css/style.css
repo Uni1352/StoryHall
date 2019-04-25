@@ -240,8 +240,8 @@ header a:hover {
 }
 
 #story>.container__item {
-    justify-content: flex-start;
-    margin: 0px 20px;
+    flex-flow: column-reverse;
+    justify-content: space-around;
 }
 
 #story>.container__item img {
