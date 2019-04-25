@@ -60,22 +60,13 @@ if (isset($_POST['userid']) && isset($_POST['password']))
 <?php
   if (isset($_SESSION['valid_user']))
   {
-    echo '<br><br><br><br><br><br>';
-    echo '<p>You are logged in as: '.$_SESSION['valid_user'].' <br />';
+    header("Location: ./index.html");
+    exit;
+    // echo '<br><br><br><br><br><br>';
+    // echo '<p>You are logged in as: '.$_SESSION['valid_user'].' <br />';
   }
   else
   {
-    if (isset($userid))
-    {
-      // if they've tried and failed to log in
-      echo '<p>Could not log you in.</p>';
-    }
-    else
-    {
-      // they have not tried to log in yet or have logged out
-      echo '<p>You are not logged in.</p>';
-    }
-
     //<!-- TODO: container -->
     echo '<div class="container" style="justify-content: center">';
     echo '    <div class="member">';
@@ -94,10 +85,20 @@ if (isset($_POST['userid']) && isset($_POST['password']))
     echo '        </div>';
     echo '    </div>';
     echo '</div>';
+
+    if (isset($userid))
+    {
+      // if they've tried and failed to log in
+      echo '<p>登入失敗，請再試一次</p>';
+    }
+    // else
+    // {
+    //   // they have not tried to log in yet or have logged out
+    //   echo '<p>You are not logged in.</p>';
+    // }
   }
 ?>
     
-
 </body>
 
 </html>
