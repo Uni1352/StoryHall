@@ -14,13 +14,13 @@
 <body>
     <!-- header -->
     <header style="background-color: #caf7ff">
-        <h1><a href="./index.html">Mobile Story Hall for Blockchain</a></h1>
+        <h1><a href="./index.php">Mobile Story Hall for Blockchain</a></h1>
     </header>
     <!-- TODO: container -->
     <div class="container" id="index">
         <div class="container__item">
             <div class="container__item--round" id="about">
-                <a href="./about.html">
+                <a href="./about.php">
                     <div>
                         <div class="container__image">
                             <img src="./images/index/about.png" alt="blockchain" style="width: 23vh">
@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="container__item--round" id="history">
-                <a href="./history.html">
+                <a href="./history.php">
                     <div>
                         <div class="container__image">
                             <img src="./images/index/history.png" alt="history" style="width: 17vh">
@@ -54,7 +54,7 @@
         </div>
         <div class="container__item">
             <div class="container__item--round" id="resource">
-                <a href="./resource.html">
+                <a href="./resource.php">
                     <div>
                         <div class="container__image">
                             <img src="./images/index/resource.png" alt="learning" style="width: 35vh">
@@ -75,7 +75,7 @@
             </div>
         </div>
     </div>
-    <!-- <script src="./stylesheets/js/authentication.js"></script> -->
+    <script src="./stylesheets/js/authentication.js"></script>
 </body>
 
 </html>

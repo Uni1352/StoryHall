@@ -14,14 +14,14 @@
 <body>
     <!-- TODO: header & navbar -->
     <header>
-        <h1><a href="./index.html">Mobile Story Hall for Blockchain</a></h1>
+        <h1><a href="./index.php">Mobile Story Hall for Blockchain</a></h1>
         <nav>
             <ul class="menu">
-                <li class="menu__item"><a href="./about.html">關於區塊鏈</a></li>
-                <li class="menu__item"><a href="./history.html">歷史回顧</a></li>
+                <li class="menu__item"><a href="./about.php">關於區塊鏈</a></li>
+                <li class="menu__item"><a href="./history.php">歷史回顧</a></li>
                 <li class="menu__item"><a href="./storyhall.php">行動故事館</a></li>
-                <li class="menu__item"><a href="./resource.html">學習資源</a></li>
-                <!-- <li class="menu__item"><a href="./download.html">下載專區</a></li> -->
+                <li class="menu__item"><a href="./resource.php">學習資源</a></li>
+                <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
                 <li class="menu__item"><a href="./login.php">登入</a></li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@
             <li class="container__listItem"><a href="https://blockcast.it/" target="_blank">區塊客</a></li>
             <li class="container__listItem"><a href="https://blablablock.asia/" target="_blank">Bla Bla BLOCK 論壇</a>
             </li>
-            <li class="container__listItem"><a href="http://www.blocktimes.tw/index/index.html"
+            <li class="container__listItem"><a href="http://www.blocktimes.tw/index/index.php"
                     target="_blank">blocktimes</a></li>
             <li class="container__listItem"><a href="https://www.facebook.com/groups/1635383210119188/"
                     target="_blank">Blockchain

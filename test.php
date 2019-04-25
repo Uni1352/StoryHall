@@ -14,21 +14,21 @@
 <body>
     <!-- TODO: header & navbar -->
     <header>
-        <h1><a href="./index.html">Mobile Story Hall for Blockchain</a></h1>
+        <h1><a href="./index.php">Mobile Story Hall for Blockchain</a></h1>
         <nav>
             <ul class="menu">
-                <li class="menu__item"><a href="./about.html">關於區塊鏈</a></li>
-                <li class="menu__item"><a href="./history.html">歷史回顧</a></li>
+                <li class="menu__item"><a href="./about.php">關於區塊鏈</a></li>
+                <li class="menu__item"><a href="./history.php">歷史回顧</a></li>
                 <li class="menu__item"><a href="./storyhall.php">行動故事館</a></li>
-                <li class="menu__item"><a href="./resource.html">學習資源</a></li>
-                <!-- <li class="menu__item"><a href="./download.html">下載專區</a></li> -->
+                <li class="menu__item"><a href="./resource.php">學習資源</a></li>
+                <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
                 <li class="menu__item"><a href="./login.php">登入</a></li>
             </ul>
         </nav>
     </header>
     <!-- TODO: container -->
     <div class="container">
-        <form action="./result.html" style="width: 100%">
+        <form action="./result.php" style="width: 100%">
             <ol>
                 <li class="container__item">
                     <h2 class="container__title"></h2>
@@ -182,7 +182,7 @@
                 </li>
             </ol>
             <div style="margin: 0 auto">
-                <a href="./storyhall.html"><input type="button" value="回上一頁" id="back"></a>
+                <a href="./storyhall.php"><input type="button" value="回上一頁" id="back"></a>
                 <input type="submit" value="確認送出" id="sendAnswer">
             </div>
         </form>
