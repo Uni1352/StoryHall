@@ -66,26 +66,25 @@ if (isset($_POST['userid']) && isset($_POST['password']))
     // echo '<p>You are logged in as: '.$_SESSION['valid_user'].' <br />';
   }
   else
-  {
-    //<!-- TODO: container -->
-    echo '<div class="container" style="justify-content: center">';
-    echo '    <div class="member">';
-    echo '        <div class="member__login">';
-    echo '            <h2 class="container__title">登入</h2>';
-    echo '            <form action="login.php" method="post">';
-    echo '                <input type="email" name="userid" id="userid" placeholder="E-mail">';
-    echo '                <input type="password" name="password" id="password" placeholder="Password">';
-    echo '                <div style="display:flex;justify-content: space-between; font-size: 0.9em">';
-    echo '                   <span>還沒有帳戶？&nbsp;&nbsp;<a href="./register.php">註冊</a></span>';
-                       //<!-- TODO: 忘記密碼 -->
-    echo '                    <!-- <span><a href="./forget.html">忘記密碼</a></span> -->';
-    echo '                </div>';
-    echo '                <input type="submit" value="登入">';
-    echo '            </form>';
-    echo '        </div>';
-    echo '    </div>';
-    echo '</div>';
-
+  {?>
+    <!-- container -->
+    <div class="container" style="justify-content: center">
+        <div class="member">
+            <div class="member__login">
+                <h2 class="container__title">登入</h2>
+                <form action="login.php" method="post">
+                    <input type="email" name="userid" id="userid" placeholder="E-mail">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div style="display:flex;justify-content: space-between; font-size: 0.9em">
+                       <span>還沒有帳戶？&nbsp;&nbsp;<a href="./register.php">註冊</a></span>
+                        <span><a href="./forget.html">忘記密碼</a></span>
+                    </div>
+                    <input type="submit" value="登入">
+                </form>
+            </div>
+        </div>
+    </div>
+<?php
     if (isset($userid))
     {
       // if they've tried and failed to log in
