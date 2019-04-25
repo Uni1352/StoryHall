@@ -52,7 +52,7 @@ if (isset($_POST['userid']) && isset($_POST['password']))
                 <li class="menu__item"><a href="#">行動故事館</a></li>
                 <li class="menu__item"><a href="./resource.html">學習資源</a></li>
                 <!-- <li class="menu__item"><a href="./download.html">下載專區</a></li> -->
-                <li class="menu__item"><a href="./login.html">登入</a></li>
+                <li class="menu__item"><a href="./login.php">登入</a></li>
             </ul>
         </nav>
     </header>
@@ -77,27 +77,26 @@ if (isset($_POST['userid']) && isset($_POST['password']))
                     <input type="password" name="password" id="password" placeholder="Password">
                     <div style="display:flex;justify-content: space-between; font-size: 0.9em">
                        <span>還沒有帳戶？&nbsp;&nbsp;<a href="./register.php">註冊</a></span>
-                        <span><a href="./forget.html">忘記密碼</a></span>
+                        <span><a href="./forget.php">忘記密碼</a></span>
                     </div>
+                    <?php
+                        if (isset($userid))
+                        {
+                          // if they've tried and failed to log in
+                          echo '<p style="color: red">登入失敗，請再試一次</p>';
+                        }
+                        // else
+                        // {
+                        //   // they have not tried to log in yet or have logged out
+                        //   echo '<p>You are not logged in.</p>';
+                        // }
+                      }
+                    ?>
                     <input type="submit" value="登入">
                 </form>
             </div>
         </div>
     </div>
-<?php
-    if (isset($userid))
-    {
-      // if they've tried and failed to log in
-      echo '<p>登入失敗，請再試一次</p>';
-    }
-    // else
-    // {
-    //   // they have not tried to log in yet or have logged out
-    //   echo '<p>You are not logged in.</p>';
-    // }
-  }
-?>
-    
 </body>
 
 </html>
