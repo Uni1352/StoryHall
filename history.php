@@ -26,13 +26,19 @@
                 <li class="menu__item"><a href="./resource.php">學習資源</a></li>
                 <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
                 <?php
-                  if(isset($_SESSION['valid_user'])) {
+                if(isset($_SESSION['valid_user'])) {
+                    echo "<script type='text/javascript'>";
+                    echo "$('nav menu__item').eq(2).show();";
+                    echo "</script>";
                 ?>  
                 <li class="menu__item"><a href="./member.php">會員專區</a></li>
                 <?php    
-                  }
-                  else
-                  {
+                }
+                else
+                {
+                    echo "<script type='text/javascript'>";
+                    echo "$('nav menu__item').eq(2).hide();";
+                    echo "</script>";
                 ?>
                 <li class="menu__item"><a href="./login.php">登入</a></li>
                 <?php    
