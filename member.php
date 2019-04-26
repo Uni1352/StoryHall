@@ -113,7 +113,7 @@
             <h2 class=" container__title">登出</h2>
             <form action="#">
                 <p>確定要登出？</p>
-                <input type="submit" name="modify" id="submit-btn2" value="確定">
+                <a href="logout.php"><input type="button" name="modify" id="submit-btn3" value="確定"></a>
             </form>
         </div>
     </div>
