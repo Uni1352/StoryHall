@@ -7,7 +7,7 @@ if (isset($_POST['userid']) && isset($_POST['password']))
   $userid = $_POST['userid'];
   $password = $_POST['password'];
 
-  $db_conn = new mysqli('127.0.0.1', 'jane', 'wasay', 'login');
+  $db_conn = new mysqli('127.0.0.1', 'uni', '12345', 'login');
 
   if (mysqli_connect_errno()) {
     echo 'Connection to database failed:'.mysqli_connect_error();
@@ -72,11 +72,10 @@ if (isset($_POST['userid']) && isset($_POST['password']))
 <?php
   if (isset($_SESSION['valid_user']))
   {
-    // header("location: ./index.php");
-    // exit;
-    echo '<script language = "javascript" type = "text/javascript">
-            location.href: "./StoryHall/index.php";
-          </script>';
+    $url = "./index.php";
+    echo "<script type='text/javascript'>";
+    echo "window.location.href='$url'";
+    echo "</script>"; 
   }
   else
   {?>
