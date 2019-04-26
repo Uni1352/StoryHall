@@ -25,7 +25,19 @@
                 <li class="menu__item"><a href="./storyhall.php">行動故事館</a></li>
                 <li class="menu__item"><a href="./resource.php">學習資源</a></li>
                 <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
+                <?php
+                  if(isset($_SESSION['valid_user'])) {
+                ?>  
+                <li class="menu__item"><a href="./member.php">會員專區</a></li>
+                <?php    
+                  }
+                  else
+                  {
+                ?>
                 <li class="menu__item"><a href="./login.php">登入</a></li>
+                <?php    
+                }
+                ?>
             </ul>
         </nav>
     </header>
@@ -73,7 +85,7 @@
     else
     {
     ?>
-        echo '<br><br><br><br><br><br><p>不讓你看</p>';
+        echo '<br><br><br><br><br><br><p>不讓你看</p>
     <?php    
     }
     ?>
