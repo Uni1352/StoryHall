@@ -47,7 +47,8 @@ input {
     border-radius: 5px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
     width: 10vw;
     margin: 5vh auto;
 }
