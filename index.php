@@ -14,7 +14,7 @@
 <body>
     <!-- header -->
     <header style="background-color: #caf7ff">
-        <h1><a href="./index.php">Mobile Story Hall for Blockchain</a></h1>
+        <h1><a href="./index.php" title="回首頁">Mobile Story Hall for Blockchain</a></h1>
     </header>
     <!-- TODO: container -->
     <div class="container" id="index">
@@ -42,7 +42,7 @@
         </div>
         <div class="container__item">
             <div class="container__item--round" id="storyhall">
-                <a href="#">
+                <a href="./storyhall.php">
                     <div>
                         <div class="container__image">
                             <img src="./images/index/storyhall.png" alt="storyhall">
@@ -64,7 +64,7 @@
                 </a>
             </div>
             <div class="container__item--round" id="member">
-                <a href="#">
+                <a href="./member.php">
                     <div>
                         <div class="container__image">
                             <img src="./images/index/member.png" alt="" style="width: 20vh">

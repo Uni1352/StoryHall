@@ -62,6 +62,10 @@ table {
     margin: 5vh 0;
 }
 
+video {
+    margin: 0 auto;
+}
+
 /* header */
 header {
     position: fixed;
@@ -245,7 +249,7 @@ header a:hover {
     justify-content: space-around;
 }
 
-#story>.container__item img {
+#story a>.container__item img {
     width: 20vw;
 }
 
@@ -263,6 +267,16 @@ header a:hover {
 
 [id^="ques"]+span {
     margin-left: 15px;
+}
+
+#test {
+    color: red;
+    font-weight: bold;
+}
+
+#test:hover {
+    background-color: rgb(226, 226, 226);
+    transition: background-color, 0.5s;
 }
 
 /* timeline */

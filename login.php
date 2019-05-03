@@ -44,7 +44,7 @@ if (isset($_POST['userid']) && isset($_POST['password']))
 <body>
     <!-- TODO: header & navbar -->
     <header>
-        <h1><a href="./index.php">Mobile Story Hall for Blockchain</a></h1>
+        <h1><a href="./index.php" title="回首頁">Mobile Story Hall for Blockchain</a></h1>
         <nav>
             <ul class="menu">
                 <li class="menu__item"><a href="./about.php">關於區塊鏈</a></li>

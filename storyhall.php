@@ -17,7 +17,7 @@
 <body>
     <!-- TODO: header & navbar -->
     <header>
-        <h1><a href="./index.php">Mobile Story Hall for Blockchain</a></h1>
+        <h1><a href="./index.php" title="回首頁">Mobile Story Hall for Blockchain</a></h1>
         <nav>
             <ul class="menu">
                 <li class="menu__item"><a href="./about.php">關於區塊鏈</a></li>
@@ -53,38 +53,55 @@
     ?>    
     <div class="container">
         <div id="story">
-            <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/bitcoin_network.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">區塊鏈</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/seal.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">智能合約</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/mining.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">比特幣與挖礦</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/vote.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">選舉</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/hospital.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">醫療</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/world.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">國際貿易</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/insurance.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">保險</h3>
-        </div>
-        <div class="container__item">
-            <div class="container__image"><img src="./images/storyhall/document.png" alt=""></div>
-            <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">生產履歷</h3>
-        </div>
+            <a href="./story01.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/mining.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">比特幣與挖礦</h3>
+                </div>
+            </a>
+            <a href="./story02.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/bitcoin_network.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">區塊鏈</h3>
+                </div>
+            </a>
+            <a href="./story03.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/seal.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">智能合約</h3>
+                </div>
+            </a>
+            <a href="./story04.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/vote.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">選舉</h3>
+                </div>
+            </a>
+            <a href="./story05.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/hospital.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">醫療</h3>
+                </div>
+            </a>
+            <a href="./story06.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/world.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">國際貿易</h3>
+                </div>
+            </a>
+            <a href="./story07.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/insurance.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">保險</h3>
+                </div>
+            </a>
+            <a href="./story08.html">
+                <div class="container__item">
+                    <div class="container__image"><img src="./images/storyhall/document.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">生產履歷</h3>
+                </div>
+            </a>
+        </div>      
     </div>
     <?php    
     }
