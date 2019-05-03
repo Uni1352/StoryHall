@@ -27,18 +27,14 @@
                 <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
                 <?php
                 if(isset($_SESSION['valid_user'])) {
-                    echo "<script type='text/javascript'>";
-                    echo "$('nav menu__item').eq(2).show();";
-                    echo "</script>";
+                   
                 ?>  
                 <li class="menu__item"><a href="./member.php">會員專區</a></li>
                 <?php    
                 }
                 else
                 {
-                    echo "<script type='text/javascript'>";
-                    echo "$('nav menu__item').eq(2).hide();";
-                    echo "</script>";
+                  
                 ?>
                 <li class="menu__item"><a href="./login.php">登入</a></li>
                 <?php    
@@ -96,10 +92,14 @@
         <div class="container__item" id="dataModify">
             <h2 class="container__title">基本資料修改</h2>
             <form action="#">
-                <label for="userName">Your Name</label>
+                <label for="userName">名稱</label>
                 <input type="text" name="userName" id="userName">
-                <label for="userEmail">Your Email</label>
+                <label for="userEmail">Email</label>
                 <input type="email" name="userEmail" id="userEmail">
+                <label for="study">學歷</label>
+                <input type="text" name="study" id="study">
+                <label for="work">職業</label>
+                <input type="text" name="work" id="">
                 <input type="submit" name="modify" id="submit-btn" value="修改">
             </form>
         </div>

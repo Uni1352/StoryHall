@@ -27,18 +27,14 @@
                 <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
                 <?php
                 if(isset($_SESSION['valid_user'])) {
-                    echo "<script type='text/javascript'>";
-                    echo "$('nav menu__item').eq(2).show();";
-                    echo "</script>";
+                   
                 ?>  
                 <li class="menu__item"><a href="./member.php">會員專區</a></li>
                 <?php    
                 }
                 else
                 {
-                    echo "<script type='text/javascript'>";
-                    echo "$('nav menu__item').eq(2).hide();";
-                    echo "</script>";
+                  
                 ?>
                 <li class="menu__item"><a href="./login.php">登入</a></li>
                 <?php    
@@ -56,6 +52,8 @@
                     <input type="text" name="userName" id="" placeholder="Username">
                     <input type="email" name="userEmail" id="" placeholder="E-mail">
                     <input type="password" name="userPassword" id="" placeholder="Password">
+                    <input type="text" name="study" id="study" placeholder="Study">
+                    <input type="text" name="work" id="" placeholder="Work">
                     <span style="font-size: 0.9em">已經有帳戶了？&nbsp;&nbsp;<a href="./login.php">登入</a></span>
                     <input type="submit" value="註冊">
                 </form>
