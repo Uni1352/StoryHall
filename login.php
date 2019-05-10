@@ -100,7 +100,7 @@ if (isset($_POST['userid']) && isset($_POST['password']))
                         }
                         // else
                         // {
-                        //   // they have not tried to log in yet or have logged out
+                        //   they have not tried to log in yet or have logged out
                         //   echo '<p>You are not logged in.</p>';
                         // }
                       }
