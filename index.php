@@ -75,6 +75,10 @@
             </div>
         </div>
     </div>
+    <div class="container" style="flex-direction: column;background-color: snow;">
+        <h2 class="container__title">關於</h2>
+        <p>本站透過多媒體情境式學習期望有效提升學習者對區塊鏈原理與應用的認知，並達成提升學習者科學概念與資訊素養的目的，期望成為一個有價值的推廣認知區塊鏈應用之數位學習平台。</p>
+    </div>
     <script src="./stylesheets/js/authentication.js"></script>
 </body>
 

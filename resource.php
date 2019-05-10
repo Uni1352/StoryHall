@@ -44,27 +44,35 @@
         </nav>
     </header>
     <!-- TODO: container -->
-    <div class="container">
-        <ol class="container__list" style="line-height: 2.5rem">
-            <li class="container__listItem"><a href="https://www.blocktempo.com/" target="_blank">動區</a></li>
-            <li class="container__listItem"><a href="https://blocktrend.today/" target="_blank">區塊勢，會說話的區塊鏈電子報</a></li>
-            <li class="container__listItem"><a href="https://block0.org/" target="_blank">Block0，極簡區塊鏈</a></li>
-            <li class="container__listItem"><a href="https://blockcast.it/" target="_blank">區塊客</a></li>
-            <li class="container__listItem"><a href="https://blablablock.asia/" target="_blank">Bla Bla BLOCK 論壇</a>
-            </li>
-            <li class="container__listItem"><a href="http://www.blocktimes.tw/index/index.php"
-                    target="_blank">blocktimes</a></li>
-            <li class="container__listItem"><a href="https://www.facebook.com/groups/1635383210119188/"
-                    target="_blank">Blockchain
-                    的前世今生與未來Public Group | Facebook</a></li>
-            <li class="container__listItem"><a href="https://fintech.csie.ntu.edu.tw/" target="_blank">臺大金融科技區塊鏈</a>
-            </li>
-            <li class="container__listItem"><a href="https://www.mokoversity.com/blockchain"
-                    target="_blank">Mokoversity，Blockchain
-                    一站式學習區塊鏈技術指南</a></li>
-            <li class="container__listItem"><a href="https://poweichen.gitbook.io/blockchain-guide-zh/"
-                    target="_blank">區塊鏈技術指南</a></li>
-        </ol>
+    <div class="container" style="flex-direction: column">
+        <div class="container__item">
+            <div>
+                <h2 class="container__title">學習資源</h2><br>
+                <p>提供目前線上有提供區塊鏈知識的媒體社群、電子報、論壇、電子書等相關外部網站連結。</p>
+            </div>
+        </div>
+        <div class="container__item">
+            <ol class="container__list" style="line-height: 2.5rem">
+                <li class="container__listItem"><a href="https://www.blocktempo.com/" target="_blank">動區</a></li>
+                <li class="container__listItem"><a href="https://blocktrend.today/" target="_blank">區塊勢，會說話的區塊鏈電子報</a></li>
+                <li class="container__listItem"><a href="https://block0.org/" target="_blank">Block0，極簡區塊鏈</a></li>
+                <li class="container__listItem"><a href="https://blockcast.it/" target="_blank">區塊客</a></li>
+                <li class="container__listItem"><a href="https://blablablock.asia/" target="_blank">Bla Bla BLOCK 論壇</a>
+                </li>
+                <li class="container__listItem"><a href="http://www.blocktimes.tw/index/index.php"
+                        target="_blank">blocktimes</a></li>
+                <li class="container__listItem"><a href="https://www.facebook.com/groups/1635383210119188/"
+                        target="_blank">Blockchain
+                        的前世今生與未來Public Group | Facebook</a></li>
+                <li class="container__listItem"><a href="https://fintech.csie.ntu.edu.tw/" target="_blank">臺大金融科技區塊鏈</a>
+                </li>
+                <li class="container__listItem"><a href="https://www.mokoversity.com/blockchain"
+                        target="_blank">Mokoversity，Blockchain
+                        一站式學習區塊鏈技術指南</a></li>
+                <li class="container__listItem"><a href="https://poweichen.gitbook.io/blockchain-guide-zh/"
+                        target="_blank">區塊鏈技術指南</a></li>
+            </ol>
+        </div>
     </div>
     <!-- <script src="./stylesheets/js/authentication.js"></script> -->
 </body>

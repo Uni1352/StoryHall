@@ -57,14 +57,14 @@
             </a>
             <a href="./story02.php">
                 <div class="container__item">
-                    <div class="container__image"><img src="./images/storyhall/bitcoin_network.png" alt=""></div>
-                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">區塊鏈</h3>
+                    <div class="container__image"><img src="./images/storyhall/pay.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">支付</h3>
                 </div>
             </a>
             <a href="./story03.php">
                 <div class="container__item">
-                    <div class="container__image"><img src="./images/storyhall/seal.png" alt=""></div>
-                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">智能合約</h3>
+                    <div class="container__image"><img src="./images/storyhall/chart.png" alt=""></div>
+                    <h3 class="container__subtitle" style="color: rgb(70, 49, 206)">證券</h3>
                 </div>
             </a>
             <a href="./story04.php">

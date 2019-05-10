@@ -1,3 +1,12 @@
+$(document).ready(function () {
+    $(".timeline").hide();
+});
+
+$("#more").on("click", function () {
+    $("#blockinfo").fadeOut(500);
+    $(".timeline").fadeIn(500);
+});
+
 $(() => {
     let stickyTop = 0,
         scrollTarget = false;

@@ -49,10 +49,26 @@
             <div class="member__register">
                 <h2 class="container__title">註冊</h2>
                 <form>
+                    <label for="userBirth">用戶名</label>
                     <input type="text" name="userName" id="" placeholder="Username">
+                    <label for="userBirth">信箱</label>
                     <input type="email" name="userEmail" id="" placeholder="E-mail">
+                    <label for="userBirth">密碼</label>
                     <input type="password" name="userPassword" id="" placeholder="Password">
+                    <label for="userBirth">生日</label>
+                    <input type="date" name="userBirth" id="">                   
+                    <span>
+                        <label for="male">
+                            <input type="radio" name="userSex" id="male">&nbsp;男
+                        </label>
+                        &nbsp;&nbsp;&nbsp;
+                        <label for="female">
+                            <input type="radio" name="userSex" id="female">&nbsp;女
+                        </label>
+                    </span>
+                    <label for="userBirth">學歷</label>
                     <input type="text" name="study" id="study" placeholder="Study">
+                    <label for="userBirth">職業</label>
                     <input type="text" name="work" id="" placeholder="Work">
                     <span style="font-size: 0.9em">已經有帳戶了？&nbsp;&nbsp;<a href="./login.php">登入</a></span>
                     <input type="submit" value="註冊">

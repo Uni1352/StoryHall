@@ -50,7 +50,7 @@
         </div>
         <ol>
             <li class="container__item">
-                <h2 class="container__title">Lorem, ipsum dolor.</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques01A">
                     <input type="radio" name="ques01" id="ques01A">
                     <span></span>
@@ -69,7 +69,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Totam, ab ipsam.</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques02A">
                     <input type="radio" name="ques02" id="ques02A">
                     <span></span>
@@ -88,7 +88,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Magnam, laudantium architecto.</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques03A">
                     <input type="radio" name="ques03" id="ques03A">
                     <span></span>
@@ -107,7 +107,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Beatae, consequatur officia.</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques04A">
                     <input type="radio" name="ques04" id="ques04A">
                     <span></span>
@@ -126,7 +126,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Voluptates, corrupti officiis.</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques05A">
                     <input type="radio" name="ques05" id="ques05A">
                     <span></span>
@@ -145,7 +145,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Quia, rem eum!</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques06A">
                     <input type="radio" name="ques06" id="ques06A">
                     <span></span>
@@ -164,7 +164,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Illo, quibusdam reprehenderit!</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques07A">
                     <input type="radio" name="ques07" id="ques07A">
                     <span></span>
@@ -183,7 +183,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Ut, necessitatibus quibusdam.</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques08A">
                     <input type="radio" name="ques08" id="ques08A">
                     <span></span>
@@ -202,7 +202,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Sint, quaerat minima!</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques09A">
                     <input type="radio" name="ques09" id="ques09A">
                     <span></span>
@@ -221,7 +221,7 @@
                 </label>
             </li>
             <li class="container__item">
-                <h2 class="container__title">Illo, voluptatem facilis?</h2>
+                <h2 class="container__title"></h2>
                 <label for="ques10A">
                     <input type="radio" name="ques10" id="ques10A">
                     <span></span>

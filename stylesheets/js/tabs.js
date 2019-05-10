@@ -1,9 +1,16 @@
 $(document).ready(function () {
+    $("#blockcontent").hide();
+
     $("#tabs li").eq(0).addClass("menu__item--selected");
 
     for (var i = 1; i < $("#tabs li").length; i++) {
         $("#sidebar").siblings().eq(i).hide();
     }
+});
+
+$("#more").on("click", function () {
+    $("#blockinfo").fadeOut(200);
+    $("#blockcontent").fadeIn(1000);
 });
 
 $("#tabs").on("click", "li", function () {

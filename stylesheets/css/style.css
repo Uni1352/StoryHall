@@ -51,10 +51,15 @@ input[type="submit"],
 input[type="button"] {
     width: 10vw;
     margin: 5vh auto;
+    cursor: pointer;
 }
 
 label {
     margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
 }
 
 table {
@@ -116,7 +121,6 @@ header a:hover {
     padding: 5vh 15vh;
     margin-top: 80px;
     font-size: 18px;
-    min-height: calc(100vh - 80px);
 }
 
 .container__item {
@@ -278,6 +282,10 @@ header a:hover {
     transition: background-color, 0.5s;
 }
 
+#blockinfo {
+    min-height: calc(100vh - 80px);
+}
+
 /* timeline */
 .timeline {
     margin-left: -30px;
@@ -383,6 +391,10 @@ header a:hover {
 #passwordChange input[type="submit"],
 #logOut input[type="submit"] {
     width: 10vw;
+}
+
+#dataModify input[type="radio"] {
+    width: 25px;
 }
 
 #dataModify label,

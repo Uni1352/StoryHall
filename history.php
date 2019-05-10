@@ -45,6 +45,15 @@
     </header>
     <!-- TODO: container -->
     <div class="container">
+        <div class="container__item" id="blockinfo">
+            <div>
+                <h2 class="container__title">歷史回顧</h2><br>
+                <p class="container__subtitle">整理2008年至2018年間區塊鏈的精彩瞬間，包含中本聰的堀起、比特幣披薩日、挖礦機、乙太坊創立等的時間點及內容。</p>
+            </div>
+            <div>
+                <button id="more">開始閱讀</button>
+            </div>
+        </div>
         <div class="timeline">
             <ul class="timeline__nav">
                 <li><span>2018</span></li>
