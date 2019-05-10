@@ -108,10 +108,10 @@
                         <input type="radio" name="userSex" id="female">&nbsp;女
                     </label>
                 </span>
-                <label for="study">學歷</label>
-                <input type="text" name="study" id="study">
-                <label for="work">職業</label>
-                <input type="text" name="work" id="">
+                <label for="education">學歷</label>
+                <input type="text" name="study" id="education">
+                <label for="career">職業</label>
+                <input type="text" name="work" id="career">
                 <input type="submit" name="modify" id="submit-btn" value="修改">
             </form>
         </div>
