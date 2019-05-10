@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,8 +48,7 @@
         <div class="member">
             <div class="member__register">
                 <h2 class="container__title">註冊</h2>
-                <form>
-                    <label for="userBirth">用戶名</label>
+                <form method="POST" action="register.php">
                     <input type="text" name="userName" id="" placeholder="Username">
                     <label for="userBirth">信箱</label>
                     <input type="email" name="userEmail" id="" placeholder="E-mail">
@@ -76,6 +75,63 @@
             </div>
         </div>
     </div>
+
+
+<?php
+ $servername = "localhost";
+ $username = "username";
+ $password = "password";
+ $dbname = "myDB";
+ 
+ // Create connection
+ $conn = new mysqli('127.0.0.1', 'jane', 'wasay', 'StoryHall');
+
+ if (isset($_POST['userName']) && isset($_POST['userEmail']) && isset($_POST['userPassword']) && isset($_POST['study'])&& isset($_POST['work']))
+{
+  // if the user has just tried to log in
+  $userid = $_POST['userName'];
+  $userEmail = $_POST['userEmail'];
+  $userPassword = $_POST['userPassword'];
+  $study = $_POST['study'];
+  $work = $_POST['work'];
+}
+
+ // Check connection
+ if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+ }
+ 
+ $sql = "INSERT INTO UserProfile (email, password, name, sex, age, job, education)
+ VALUES ('$userEmail', '$userPassword', '$userid', '$userid', 17, '$work', '$study')";
+ 
+ if ($conn->query($sql) === TRUE) {
+     echo "New record created successfully";
+ } else {
+     echo "Error: " . $sql . "<br>" . $conn->error;
+ }
+ 
+ $conn->close();
+
+
+
+
+
+
+// if ($dbconn->connect_error) die($conn->connect_error);
+
+// if (isset($_POST['userName']) && isset($_POST['userEmail']) && isset($_POST['userPassword']) && isset($_POST['study'])&& isset($_POST['work']))
+// {
+//   // if the user has just tried to log in
+//   $userid = $_POST['userName'];
+//   $userEmail = $_POST['userEmail'];
+//   $userPassword = $_POST['userPassword'];
+//   $study = $_POST['study'];
+//   $work = $_POST['work'];
+// }
+// $query = "INSERT INTO UserProfile VALUES ('$userEmail', '$userPassword', '$userid', '$userid', '$userid', '$work', '$study')";
+// $result = $db_conn->query($query);
+?>
+
 </body>
 
 </html>

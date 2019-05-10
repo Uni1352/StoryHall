@@ -7,15 +7,15 @@ if (isset($_POST['userid']) && isset($_POST['password']))
   $userid = $_POST['userid'];
   $password = $_POST['password'];
 
-  $db_conn = new mysqli('127.0.0.1', 'uni', '12345', 'login');
+  $db_conn = new mysqli('127.0.0.1', 'jane', 'wasay', 'StoryHall');
 
   if (mysqli_connect_errno()) {
     echo 'Connection to database failed:'.mysqli_connect_error();
     exit();
   }
   
-  $query = "select * from authorized_users where 
-            name='".$userid."' and 
+  $query = "select * from UserProfile where 
+            email='".$userid."' and 
             password='".$password."'";
 
   $result = $db_conn->query($query);
