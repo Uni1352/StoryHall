@@ -103,9 +103,10 @@
     }
     else
     {
-    ?>
-        echo '<br><br><br><br><br><br><p>不讓你看</p>
-    <?php    
+        $url = "./login.php";
+        echo "<script type='text/javascript'>";
+        echo "window.location.href='$url'";
+        echo "</script>";    
     }
     ?>
 </body>
