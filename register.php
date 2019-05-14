@@ -22,13 +22,13 @@ session_start();
             <ul class="menu">
                 <li class="menu__item"><a href="./about.php">關於區塊鏈</a></li>
                 <li class="menu__item"><a href="./history.php">歷史回顧</a></li>
-                <li class="menu__item"><a href="./storyhall.php">行動故事館</a></li>
                 <li class="menu__item"><a href="./resource.php">學習資源</a></li>
                 <!-- <li class="menu__item"><a href="./download.php">下載專區</a></li> -->
                 <?php
                 if(isset($_SESSION['valid_user'])) {
                    
                 ?>  
+                <li class="menu__item"><a href="./storyhall.php">行動故事館</a></li>
                 <li class="menu__item"><a href="./member.php">會員專區</a></li>
                 <?php    
                 }
@@ -79,11 +79,6 @@ session_start();
 
 
 <?php
- $servername = "localhost";
- $username = "username";
- $password = "password";
- $dbname = "myDB";
- 
  // Create connection
  $conn = new mysqli('127.0.0.1', 'jane', 'wasay', 'StoryHall');
 
@@ -93,8 +88,10 @@ session_start();
   $userid = $_POST['userName'];
   $userEmail = $_POST['userEmail'];
   $userPassword = $_POST['userPassword'];
-  $study = $_POST['study'];
+  $study = $_POST['education'];
   $work = $_POST['work'];
+  $userSex = $_POST['userSex'];
+  $userBirth = $_POST['userBirth'];
 }
 
  // Check connection
@@ -103,7 +100,7 @@ session_start();
  }
  
  $sql = "INSERT INTO UserProfile (email, password, name, sex, age, job, education)
- VALUES ('$userEmail', '$userPassword', '$userid', '$userid', 17, '$work', '$study')";
+ VALUES ('$userEmail', '$userPassword', '$userid', 'userSex', '18', '$work', '$education')";
  
  if ($conn->query($sql) === TRUE) {
      echo "New record created successfully";
