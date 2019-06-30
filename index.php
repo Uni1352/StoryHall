@@ -29,13 +29,13 @@
                     </div>
                 </a>
             </div>
-            <div class="container__item--round" id="history">
-                <a href="./history.php">
+            <div class="container__item--round" id="resource">
+                <a href="./resource.php">
                     <div>
                         <div class="container__image">
-                            <img src="./images/index/history.png" alt="history" style="width: 17vh">
+                            <img src="./images/index/resource.png" alt="learning" style="width: 35vh">
                         </div>
-                        <p class="container__imageInfo">歷史回顧</p>
+                        <p class="container__imageInfo">學習資源</p>
                     </div>
                 </a>
             </div>
@@ -53,13 +53,13 @@
             </div>
         </div>
         <div class="container__item">
-            <div class="container__item--round" id="resource">
-                <a href="./resource.php">
+            <div class="container__item--round" id="history">
+                <a href="./history.php">
                     <div>
                         <div class="container__image">
-                            <img src="./images/index/resource.png" alt="learning" style="width: 35vh">
+                            <img src="./images/index/history.png" alt="history" style="width: 17vh">
                         </div>
-                        <p class="container__imageInfo">學習資源</p>
+                        <p class="container__imageInfo">歷史回顧</p>
                     </div>
                 </a>
             </div>
