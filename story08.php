@@ -51,7 +51,7 @@
     <!-- TODO: container -->
     <div class="container" style="flex-direction: column">
         <h2 class="container__title"></h2>
-        <!-- <video src="./media/BitcoinAndMining.mp4" controls></video> -->
+        <video src="./media/Traceability.mp4" controls></video>
         <div class="container__item">
             <h3 class="container__subtitle"></h3>
             <p class="container__content"></p>
